@@ -8,26 +8,29 @@ public class Best_Time_to_Buy_and_Sell_Stock {
 	
 	@Test
 	public void test(){
-		JunitTest.Print(new Solution().maxProfit(new int[]{2,1})+"");
+		JunitTest.Print(new Solution().maxProfit(new int[]{1,2,9})+"");
 	}
 	
 	public class Solution {
 		
 	    public int maxProfit(int[] prices) {
-	    	if(prices==null||prices.length==0){
+	    	if(prices==null||prices.length<=1){
 	    		return 0;
 	    	}
-	        int min=Integer.MAX_VALUE;
-	        int max=Integer.MIN_VALUE;
-	        for(int i:prices){
-	        	if(i>max){
-	        		max=i;
+	        int min=prices[0];
+	        int max=min;
+	        int ret=0;
+	        for(int i=1;i<prices.length;i++){
+	        	if(prices[i]<min){
+	        		max=min=prices[i];
 	        	}
-	        	if(i<min){
-	        		min=i;
+	        	else if(prices[i]>max){
+	        		int t=prices[i]-min;
+	        		if(t>ret) 
+	        			ret=t;
 	        	}
 	        }
-	        return max-min;
+	        return ret;	       
 	    }
 	}
 }
