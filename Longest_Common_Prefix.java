@@ -1,5 +1,7 @@
 package leetcode;
 
+import junit.framework.Assert;
+
 public class Longest_Common_Prefix extends TestCase{
 	@Override
 	public void test() {

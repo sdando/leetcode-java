@@ -21,7 +21,7 @@ public class Max_Points_on_a_Line {
 	    public int maxPoints(Point[] points) {
 	        boolean[] flag=new boolean[points.length];
 	        Arrays.fill(flag, false);
-	        
+	        return 0;
 	    }
 	    
 	    double cos(Point p1,Point p2){

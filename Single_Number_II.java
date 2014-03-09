@@ -10,6 +10,7 @@ public class Single_Number_II {
 	public void test(){
 		JunitTest.Print(new Single_Number_II().singleNumber(new int[]{1,1,1,3})+"");
 	}
+	//count统计所有数在某一位上1的个数，若恰好是3的倍数，则出现次数为1的数在这一位上为0，否则，则为1
     public int singleNumber(int[] A) {
         int ret=0;
     	int count;
