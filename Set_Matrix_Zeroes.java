@@ -27,7 +27,7 @@ public class Set_Matrix_Zeroes {
         			matrix[i][0]=0;
         		}
         	}
-        //set row and columns have zero
+        //set rows and columns have zero
         for(i=1;i<row;i++)
         	for(j=1;j<col;j++){
         		if(matrix[0][j]==0||matrix[i][0]==0)

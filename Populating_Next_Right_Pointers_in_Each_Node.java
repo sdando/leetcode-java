@@ -16,16 +16,10 @@ public class Populating_Next_Right_Pointers_in_Each_Node {
 	@Test
 	public void test(){
 		TreeLinkNode node=new TreeLinkNode(1);
-		node.next=null;
 		node.left=new TreeLinkNode(2);
-		node.left.left=null;
-		node.left.right=null;
-		node.left.next=null;
 		node.right=new TreeLinkNode(3);
-		node.right.left=null;
-		node.right.right=null;
-		node.right.next=null;
 		connect(node);
+		return;
 	}
 	
 	LinkedList<TreeLinkNode> queue;
