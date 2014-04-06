@@ -38,15 +38,19 @@ public class Word_Search extends TestCase{
     	char tmp=board[row][col];
     	board[row][col]='.';
         boolean r1=false,r2=false,r3=false,r4=false;
+        //down
     	if(row<board.length-1&&board[row+1][col]!='.'){
     		r1=search(board, index+1, row+1, col);
     	}
+    	//right
     	if(!r1&&col<board[0].length-1&&board[row][col+1]!='.'){
     		r2=search(board, index+1, row, col+1);
     	}
+    	//up
     	if(!r1&&!r2&&row>0&&board[row-1][col]!='.'){
     		r3=search(board, index+1, row-1, col);
     	}
+    	//left
     	if(!r1&&!r2&&!r3&&col>0&&board[row][col-1]!='.'){
     		r4=search(board, index+1, row, col-1);
     	}

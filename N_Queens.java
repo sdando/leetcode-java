@@ -12,9 +12,9 @@ public class N_Queens extends TestCase {
         return;
 	}
 	
-	int[] CFlg;
-	int[] DiagFlg;
-	int[] MDiagFlg;
+	int[] CFlg;      //列是否安全
+	int[] DiagFlg;   //主对角线
+	int[] MDiagFlg;  //辅对角线
 	
     public ArrayList<String[]> solveNQueens(int n) {
         ArrayList<String[]> ret=new ArrayList<String[]>();

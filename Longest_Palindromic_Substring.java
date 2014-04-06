@@ -7,6 +7,7 @@ public class Longest_Palindromic_Substring extends TestCase {
 		// TODO Auto-generated method stub
 
 	}
+	//f[j][i] is if j'th char to i'th char is Palindrome 
     public String longestPalindrome(String s) {
     	if(s==null||"".equals(s)) return "";
         int length=s.length();

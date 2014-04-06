@@ -26,7 +26,7 @@ public class Word_Break {
         f=new int[len][len];
         return wordBreak(s, dict,0,len-1);
     }
-    
+    //f[i][j] represents if string from i to j can break
     public boolean wordBreak(String s,Set<String> dict,int i,int j){
     	if(f[i][j]==1) return true;
     	if(f[i][j]==-1) return false;
