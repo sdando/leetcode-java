@@ -22,8 +22,8 @@ public class String_to_Integer extends TestCase {
         	start=1;
         }
         else if(s.charAt(0)<'0'||s.charAt(0)>'9'){
-			return 0;
-		}
+			    return 0;
+		    }
         char ch;
         for(int i=start;i<s.length();i++){
         	ch=s.charAt(i);

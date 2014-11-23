@@ -11,6 +11,7 @@ public class Candy extends TestCase {
 		// TODO Auto-generated method stub
         Assert.assertEquals(7, candy(new int[]{1,2,2,2,1}));
 	}
+	//两遍扫描，一遍扫描确保右边的孩子的糖果都比左边的多，二遍确保左边的孩子比右边的多
     public int candy(int[] ratings) {
         if(ratings==null) return 0;
         int length=ratings.length;

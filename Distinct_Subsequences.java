@@ -31,6 +31,7 @@ public class Distinct_Subsequences extends TestCase {
         for(int i=2;i<=tLength;i++)
         	for(int j=1;j<=sLength;j++){
         		f[i][j]=f[i][j-1];
+        		//第i个字符和第j个字符相等
         		if(T.charAt(i-1)==S.charAt(j-1))
         			f[i][j]+=f[i-1][j-1];
         	}

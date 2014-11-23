@@ -9,7 +9,7 @@ public class Longest_Substring_Without_Repeating_Characters extends TestCase {
 		// TODO Auto-generated method stub
         Assert.assertEquals(3, lengthOfLongestSubstring("abcabca"));
 	}
-	//j保存不重复字符串的起始位置
+	//j保存不重复字符串的起始位置，不重复的串的最大长度为256
     public int lengthOfLongestSubstring(String s) {
     	int length=s.length();
     	if(length==0) return 0;
@@ -33,6 +33,7 @@ public class Longest_Substring_Without_Repeating_Characters extends TestCase {
 				}
 			}
         }
+        //没有一个重复的
         result=Math.max(length-j, result);
         return result;
     }

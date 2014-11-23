@@ -21,7 +21,7 @@ public class Divide_Two_Integers extends TestCase {
         if(sign==-1) ans=-ans;
         return (int)ans;
     }
-    //ÖðÒ»ÅÐ¶Ï2^31,2^30,2^29...2^0¸öbÊÇaÄÜ·ñ¼õµô£¬·ÀÖ¹Òç³ö£¬a×óÒÆ¶ø·ÇbÓÒÒÆ
+    //ÖðÒ»ÅÐ¶Ï2^31,2^30,2^29...2^0¸öbÊÇaÄÜ·ñ¼õµô£¬·ÀÖ¹Òç³ö£¬a×óÒÆ¶ø·ÇbÓÒÒÆ,(a+b)/c = a/c + b/c
     private long mydivide(long a,long b){
     	long ans=0;
     	for(int i=31;i>=0;i--){

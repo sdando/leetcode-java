@@ -11,6 +11,7 @@ public class Largest_Rectangle_in_Histogram extends TestCase {
 		// TODO Auto-generated method stub
        Assert.assertEquals(12, largestRectangleArea(new int[]{5,5,1,7,1,1,5,2,7,6}));
 	}
+	//实际上求经过每个矩形的最大面积
 	//heigthStack保存递增的长度序列，对于递增的长度序列，其最大面积可从最右端来求取
     public int largestRectangleArea(int[] height) {
         if(height==null||height.length==0) return 0;

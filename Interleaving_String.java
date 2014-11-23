@@ -39,7 +39,7 @@ public class Interleaving_String extends TestCase {
 //        else
 //        	return false;
 //    }
-	//f[i][j]表示s1[1,i]和s2[1,j]是否匹配s3[1,i+j]
+	//f[i][j]表示s1[1,i]和s2[1,j]是否匹配s3[1,i+j]（前i+j个字符）
     public boolean isInterleave(String s1, String s2, String s3) {
         int len1=s1.length();
         int len2=s2.length();
